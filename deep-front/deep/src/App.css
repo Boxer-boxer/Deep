@@ -1,0 +1,543 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+
+.warning-red{
+  color:red;
+}
+
+
+
+.entry {
+  text-align: left;
+  cursor: pointer;
+}
+
+.entry_post {
+  word-break: break-all;
+}
+
+.profilePic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+
+
+.testomg{
+  background-color: cyan;
+}
+
+.returnButton {
+  position: absolute;
+  font-size: 50px;
+  height: 3.5rem;
+  width: 3.5rem;
+  top: 0;
+  left: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  background: none;
+  float: left;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.app-name {
+  font-size: 70px;
+  padding-top: 50px;
+}
+
+.title-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 7em;
+  padding: 25px;
+  background: #97a2aa;
+  border-radius: 15px;
+  color: #333333;
+}
+
+.title-card > input {
+  background: none;
+  border: none;
+  text-align: center;
+  font-size: 25px;
+  cursor: text;
+}
+
+input[type="text"]{
+  outline: none;
+  cursor: text;
+}
+
+.submitButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  border: 2px solid #000;
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+  right: 15px;
+  top: 15px;
+}
+
+.title-holder {
+  height: 4rem!important;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+  .fr-mobile {
+    display:none!important;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+  .fr-toolbar {
+    display:none!important;
+    }
+}
+  
+.separator {
+  border: 1px solid black;
+
+}
+
+.fr-toolbar {
+  border:none!important;
+}
+
+.second-toolbar {
+    display:none!important;
+}
+
+.entryTitle {
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  padding-left: 5px;
+}
+
+.date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 6px;
+  padding-right: 5px;
+  font-size: 12px;
+}
+
+.content-card{
+  font-weight: 100;
+}
+
+.welcome{
+  height: 100% !important;
+  background: #1a1a1a;
+  width: full;
+  height: full;
+  color: #fff;
+}
+
+
+#root > div > div, #root > div,
+html, body, #root{ 
+  height:100% ;
+}
+
+
+
+.wel_subs {
+  margin-left: 20px;
+}
+
+.wel_text {
+  font-weight: 200;
+  margin-bottom: 2.5rem;
+}
+
+.wel_data {
+  border-bottom: 2px solid #fff;
+}
+
+.journal_box{
+  padding: 1rem;
+  margin: 10px;
+  border-radius: 10px;
+  width: 12.0rem;
+  height: 5rem;
+  cursor: pointer;
+  background-image: url("https://images.pexels.com/photos/45718/pexels-photo-45718.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-position: 50% 50%;
+  transition: all 0.5s ease-in;
+}
+
+.journal_div {
+  z-index: 99;
+  margin-top: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+}
+
+.journal_box:hover {
+  z-index: 99;
+
+  transform: scale(1.1); 
+}
+
+.journal_name {
+  position: relative;
+  background: #fff;
+  width: auto;
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 15px;
+  color: #1f1f40;
+  width: 6rem;
+  overflow: hidden;
+}
+
+
+.journal_entries{
+  padding-top: 25px;
+}
+
+.CreateJournal {
+  padding-top:45px;
+  margin-bottom:2rem;
+  display: flex;
+  flex-direction: column;
+  aling-items:center;
+  justify-content: center;
+  background-image: url("https://images.pexels.com/photos/753695/pexels-photo-753695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") !important;
+  color: #000;
+  background-size: cover;
+  width: 12.5rem;
+  height: 20rem;
+  border-radius: 15px;
+}
+
+.CreateJournal > input {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: none;
+  border: none;
+  font-size: 19px;
+  padding: 10px;
+  text-align: center;
+}
+
+.CreateJournal > button {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  margin-left:30%;
+  transition: all 0.5s ease-in
+}
+
+.CreateJournal > button:hover {
+  background: #9bdbe5;
+  border: 1px solid blue;
+}
+
+.logOff {
+  color: white;
+  width: 50px;
+  height: 50px;
+}
+
+.logOffContainer {
+  margin: 15px;
+}
+
+
+.native_login{
+  height: auto !important;
+}
+
+.RecoverPassContainer {
+  height: auto!important;
+  animation: entrance 0.5s ease-in-out;
+}
+
+.login-message-appear{
+  animation: entrance 0.5s ease-in-out;
+}
+
+@keyframes entrance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.emailBar {
+  background:#1a1a1a;
+  border: 1px solid #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  width: 20rem;  
+}
+
+.emailBtn {
+  border: 1px solid #1a1a1a;
+  background: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.loginButton{
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+
+.socialMediaLogin {
+  padding: 0 !important;
+  margin: 0px;
+}
+
+.socialMediaLogin > button {
+  width: 50%!important;
+  box-shadow: none!important;
+  text-align:center!important;
+  height: 80px;
+}
+
+.kep-login-facebook {
+  width: 50%!important;
+  box-shadow: none!important;
+  text-align:center!important;
+  height: 80px;
+}
+
+.EraseBtn,.EditBtn{
+  background: none;
+  border: 1px solid #97a2aa;
+  border-radius:3px;
+  margin: 15px;
+  padding: 10px;
+  width: 10%
+} 
+
+.container-entries {
+  background: #1a1a1a;
+}
+
+.container-entries > div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+}
+
+
+
+.ellipses{
+  margin-left: auto;
+  cursor: pointer
+}
+
+.erasebutton{
+  background: #fff;
+  font-color: #1a1a1a;
+  border: none;
+  transition: 0.5s linear;
+}
+
+.erasebutton:hover{
+  transform: scale(1.1)
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.JournalsButton {
+  z-index: 99;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+}
+
+.closeBtn{
+  color: black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  float:right;
+  top: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+}
+
+.journals_container{
+  position:fixed;
+  background: #fff;
+  background-size:fill;  
+  top:0;
+  right:0;
+  bottom: 0;
+  left:50%;
+  z-index: 999;
+  overflow-x: hidden!important
+  ;
+  overflow-x: scroll;
+  animation: slide-left 0.1s linear;
+}
+
+@keyframes slide-left {
+  0% {opacity:0; left: 100%;}
+  100 % {opacity:1; left: 50%;}
+} 
+
+.fa-sign-out-alt{
+  color: #fff;
+  transform: rotate(180deg);
+} 
+
+.inputRegister{
+  width: 35rem;
+}
+
+.Goback {
+  background: #1a1a1a;
+  padding: 15px;
+  border: none;
+  color: white;
+}
+
+.GoRegister{
+  background: #1a1a1a;
+  padding: 15px;
+  border: none;
+  color: white;
+  margin-left: 5px;
+  width: 29.2rem;
+}
