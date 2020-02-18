@@ -35,7 +35,7 @@ db.on("error", function(err){
 
 const crypto = require('crypto');
 const algorithm = 'aes-256-cbc';
-const key = "t43s4\1as12r\iogj1h+p35l10g4k1og0hk10sf@ck+Y0u\4gpo4eohprfp1\rw163dt&%21".substr(0, 32); 
+const key = "somethinghere".substr(0, 32); 
 /*crypto.randomBytes(32)*/; //Don't like this solution... Add this to process.ENV
 const iv = crypto.randomBytes(16);
 
@@ -567,7 +567,7 @@ app.post('/user_get_or_create', async (req, res) => {
 
 const sgMail = require('@sendgrid/mail');
 
-sgMail.setApiKey('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');
+sgMail.setApiKey('sgKey');
 
 app.post('/password', (req, res)=> {
 	const {email} = req.body;
@@ -713,9 +713,9 @@ app.post('/profile', (req, res) => {
 /*==================================PUSH NOTIFICATION KEYS*/
 const webpush = require('web-push');
 
-publicVapidKey = "BNcNx9lF0ZcYJquh5WjIJAG7MTuYzw_lEFXXYWsa8u-_pHHLPOt9Kwzzjxty_Umb_Yx0Kez0hIQDyNkhavSKX8Q"
+publicVapidKey = "publicVapidKey"
 
-privateVapidKey = "e5y5659YwoMvqLBCtC8cgNnQVIJ1FeVltSnpcuAtz84"
+privateVapidKey = "privateVapidKey"
 
 webpush.setVapidDetails('mailto: jorgedasilvarodrigues92@gmail.com', publicVapidKey, privateVapidKey);
 

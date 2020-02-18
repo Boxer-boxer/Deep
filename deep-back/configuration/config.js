@@ -1,6 +1,6 @@
 module.exports={
-  "facebook_api_key"      :     "553211538798917",
-  "facebook_api_secret"   :     "25330390197ddfcc8b42096747d31b22",
+  "facebook_api_key"      :     "facebook",
+  "facebook_api_secret"   :     "facebook_secret",
   "callback_url"          :     "http://localhost:3000/auth/facebook/callback",
   "use_database"          :      false,
   "host"                  :     "localhost",
